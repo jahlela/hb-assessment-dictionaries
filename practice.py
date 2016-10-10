@@ -237,10 +237,10 @@ def top_chars(phrase):
 
     """
 
-    
+    # Initialize dictionary, 
     counts = {}
     characters = [phrase]
-    modes = []
+    modes = ['f']
 
 
     for character in characters:
@@ -252,10 +252,10 @@ def top_chars(phrase):
             modes = [character]
         elif counts[character] == all(modes):
             pass
+    
+    print modes
 
-    print counts
-
-    print max(counts, key=counts.get)
+    # print max(counts, key=counts.get)
 
     # return 
 
